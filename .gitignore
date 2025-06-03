@@ -1,0 +1,12 @@
+# Ignorar a pasta node_modules
+node_modules/
+
+# Ignorar a pasta dist
+dist
+dist-files/
+
+# Ignorar o arquivo .env
+.env*
+
+public/
+
