@@ -19,6 +19,7 @@ export const updateTask = async (req: Request, res: Response) => {
     UidValidador,
     CustoEfetivo,
     CustoPrevisto,
+    HorasPrevistas,
     Validado
   } = req.body
 
@@ -41,7 +42,8 @@ export const updateTask = async (req: Request, res: Response) => {
     UidValidador,
     CustoEfetivo,
     CustoPrevisto,
-    Validado: Validado ? true : false
+    Validado: Validado ? true : false,
+    HorasPrevistas
   };
 
   try {

@@ -46,6 +46,7 @@ import { sendSocket, sendSocketRequest } from './controllers/socket';
 import { createInbox } from './controllers/inbox/create-inbox';
 import { getInExecutionTask } from './controllers/tasks/get-in-execution';
 import { getCostAnalysisTask } from './controllers/reports/get-cost-analysis-task';
+import { getProjectOverview } from './controllers/reports/get-project-overview';
 
 
 const routes: ExpressRouter = Router();
@@ -100,6 +101,7 @@ routes.post("/tasks/activity-registrations", IsAuthenticated, updateTasksActivit
 routes.get("/reports/productivity", IsAuthenticated, getReportsProductivity);
 routes.get("/reports/productivity/member", IsAuthenticated, getReportsProductivityMember);
 routes.get("/reports/cost-analysis-task", IsAuthenticated, getCostAnalysisTask);
+routes.get("/reports/project-overview", IsAuthenticated, getProjectOverview);
 
 routes.get("/tutorials", IsAuthenticated, getTutorials);
 
